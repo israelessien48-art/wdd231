@@ -2,8 +2,6 @@
 body {
   font-family: "Roboto", Arial, sans-serif;
   margin: 0;
-  background-color: #fff; /* Ensure good contrast with text */
-  color: #000; /* Default text color */
 }
 
 /* ---------- Header ---------- */
@@ -20,13 +18,12 @@ header {
 .logo {
   width: 40px;
   height: auto;
-  filter: brightness(1.2); /* Makes logo more visible on light/dark backgrounds */
+  filter: brightness(150%);
 }
 
 .site-name {
   margin-left: 0.5rem;
   font-weight: bold;
-  color: #000; /* Ensure visibility */
 }
 
 /* ---------- Hamburger Menu ---------- */
@@ -43,7 +40,7 @@ header {
 nav {
   display: none;
   flex-direction: column;
-  background-color: #111; /* Darker for better contrast */
+  background-color: #111;
 }
 
 nav.open {
@@ -51,15 +48,14 @@ nav.open {
 }
 
 nav a {
-  color: #ffffff; /* White text for contrast */
+  color: #fff;
   padding: 0.75rem;
   text-decoration: none;
 }
 
 nav a.active {
-  background-color: #007acc; /* Blue background for high contrast */
-  color: #ffffff; /* White text for readability */
-  font-weight: bold;
+  background-color: #007acc;
+  color: #fff;
 }
 
 /* ---------- Main ---------- */
@@ -76,8 +72,8 @@ main {
 .photo h2,
 .courses h2,
 .resources h2 {
-  background-color: #111; /* Dark background for headings */
-  color: #ffffff; /* White text */
+  background-color: #222;
+  color: #ffffff;
   padding: 0.5rem;
   margin: 0;
 }
@@ -87,7 +83,6 @@ main {
   background-color: #e0e0e0;
   padding: 1rem;
   margin: 0;
-  color: #000;
 }
 
 /* ---------- Photo ---------- */
@@ -95,7 +90,6 @@ main {
   width: 100%;
   height: auto;
   background-color: #ccc;
-  border: 2px solid #444; /* subtle border for visibility */
 }
 
 /* ---------- Course Filters ---------- */
@@ -109,14 +103,6 @@ main {
 .filters button {
   padding: 0.5rem;
   cursor: pointer;
-  background-color: #007acc;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-}
-
-.filters button:hover {
-  background-color: #005f99;
 }
 
 /* ---------- Course List ---------- */
@@ -141,7 +127,6 @@ main {
 #credits {
   text-align: center;
   margin-top: 0.75rem;
-  color: #000;
 }
 
 /* ---------- Footer ---------- */
@@ -150,8 +135,6 @@ footer {
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
-  background-color: #f4f4f4;
-  color: #000;
 }
 
 footer p {
@@ -178,7 +161,7 @@ footer p {
 }
 
 .social a:hover svg {
-  fill: #007acc; /* Blue highlight on hover */
+  fill: #555;
 }
 
 /* ---------- Media Queries ---------- */
@@ -190,7 +173,6 @@ footer p {
   nav {
     display: flex;
     flex-direction: row;
-    background-color: #111;
   }
 
   nav a {
