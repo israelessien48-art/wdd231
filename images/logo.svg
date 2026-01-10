@@ -1,0 +1,41 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 420 80"
+    width="420"
+    height="80"
+    role="img"
+    aria-label="Israel Essien Logo">
+
+    <!-- Colors -->
+    <defs>
+        <style>
+            .primary { fill: #1f3c88; }
+            .secondary { fill: #4da3ff; }
+            .text { font-family: 'Poppins', Arial, sans-serif; font-weight: 600; }
+        </style>
+    </defs>
+
+    <!-- Circle Monogram -->
+    <circle cx="40" cy="40" r="36" class="primary"/>
+
+    <!-- IE Letters -->
+    <text x="40" y="50"
+          text-anchor="middle"
+          font-size="32"
+          class="secondary text">
+        IE
+    </text>
+
+    <!-- Name -->
+    <text x="95" y="50"
+          font-size="28"
+          class="primary text">
+        Israel
+    </text>
+
+    <text x="180" y="50"
+          font-size="28"
+          class="secondary text">
+        Essien
+    </text>
+</svg>
