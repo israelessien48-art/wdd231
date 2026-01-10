@@ -13,7 +13,6 @@ header {
   display: flex;
   align-items: center;
   padding: 0.75rem;
-  background-color: #ffffff; /* ensures logo visibility */
 }
 
 .logo {
@@ -24,7 +23,6 @@ header {
 .site-name {
   margin-left: 0.5rem;
   font-weight: bold;
-  color: #000000; /* ensures contrast on white background */
 }
 
 /* ---------- Hamburger Menu ---------- */
@@ -41,7 +39,7 @@ header {
 nav {
   display: none;
   flex-direction: column;
-  background-color: #222; /* dark background */
+  background-color: #222; /* dark background for contrast */
 }
 
 nav.open {
@@ -49,15 +47,14 @@ nav.open {
 }
 
 nav a {
-  color: #ffffff; /* high contrast against #222 */
+  color: #ffffff; /* white text to pass contrast */
   padding: 0.75rem;
   text-decoration: none;
-  display: block;
 }
 
 nav a.active {
-  background-color: #888; /* lighter gray for better contrast */
-  color: #ffffff; /* ensures high contrast against #888 */
+  background-color: #444; /* dark active background for contrast */
+  color: #ffffff;          /* white text for readability */
 }
 
 /* ---------- Main ---------- */
@@ -166,7 +163,7 @@ footer p {
   fill: #555;
 }
 
-/* ---------- Responsive Styles ---------- */
+/* ---------- Media Queries ---------- */
 @media (min-width: 768px) {
   #menu {
     display: none;
@@ -174,8 +171,8 @@ footer p {
 
   nav {
     display: flex;
-    background-color: #222;
     flex-direction: row;
+    background-color: #222;
   }
 
   nav a {
