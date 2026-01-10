@@ -3,13 +3,14 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   margin: 0;
   background-color: #fff;
-  color: #000;
+  color: #000; /* ensures body text contrast passes */
 }
 
 /* ---------- Header ---------- */
 header {
   border-bottom: 1px solid #ccc;
-  background-color: #222; /* dark header */
+  background-color: #222; /* dark header background */
+  color: #ffffff; /* white text for full contrast */
 }
 
 .header-content {
@@ -26,7 +27,7 @@ header {
 .site-name {
   margin-left: 0.5rem;
   font-weight: bold;
-  color: #fff; /* logo text contrast */
+  color: #ffffff; /* ensures contrast passes WCAG AA */
 }
 
 /* ---------- Hamburger Menu ---------- */
@@ -43,7 +44,7 @@ header {
 nav {
   display: none;
   flex-direction: column;
-  background-color: #222; /* dark for contrast */
+  background-color: #111; /* darker nav for contrast */
 }
 
 nav.open {
@@ -51,21 +52,20 @@ nav.open {
 }
 
 nav a {
-  color: #ffffff; /* white text for all nav links */
+  color: #ffffff; /* white text to pass contrast */
   padding: 0.75rem;
   text-decoration: none;
 }
 
 nav a.active {
-  background-color: #555; /* medium gray */
-  color: #ffffff;          /* white text */
+  background-color: #007acc; /* blue active background */
+  color: #ffffff; /* white text for readability */
 }
 
 /* ---------- Main ---------- */
 main {
   padding: 1rem;
-  color: #000;
-  background-color: #fff;
+  color: #000; /* ensures main text contrast passes */
 }
 
 /* ---------- About & Photo ---------- */
@@ -86,9 +86,9 @@ main {
 .about p,
 .resources p {
   background-color: #e0e0e0;
+  color: #000;
   padding: 1rem;
   margin: 0;
-  color: #000;
 }
 
 /* ---------- Photo ---------- */
@@ -109,6 +109,13 @@ main {
 .filters button {
   padding: 0.5rem;
   cursor: pointer;
+  background-color: #005f99; /* dark blue button */
+  color: #ffffff; /* white text */
+  border: none;
+}
+
+.filters button:hover {
+  background-color: #007acc;
 }
 
 /* ---------- Course List ---------- */
@@ -120,21 +127,21 @@ main {
 
 .course {
   background-color: #d9d9d9;
+  color: #000; /* ensure text contrast */
   padding: 0.75rem;
   text-align: center;
-  color: #000;
 }
 
 .course.completed {
   background-color: #bcd;
   font-weight: bold;
-  color: #000;
 }
 
 /* ---------- Credits ---------- */
 #credits {
   text-align: center;
   margin-top: 0.75rem;
+  color: #000;
 }
 
 /* ---------- Footer ---------- */
@@ -143,8 +150,8 @@ footer {
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
-  color: #000;
-  background-color: #f4f4f4;
+  background-color: #222;
+  color: #ffffff; /* white text for contrast */
 }
 
 footer p {
@@ -153,7 +160,7 @@ footer p {
 
 #lastModified {
   font-size: 0.8rem;
-  color: #555;
+  color: #ccc; /* lighter grey for contrast on dark footer */
 }
 
 /* ---------- Social Icons ---------- */
@@ -167,11 +174,11 @@ footer p {
 .social svg {
   width: 28px;
   height: 28px;
-  fill: #000;
+  fill: #ffffff; /* white icons for dark footer */
 }
 
 .social a:hover svg {
-  fill: #555;
+  fill: #007acc;
 }
 
 /* ---------- Media Queries ---------- */
@@ -183,6 +190,7 @@ footer p {
   nav {
     display: flex;
     flex-direction: row;
+    background-color: #111;
   }
 
   nav a {
