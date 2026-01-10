@@ -2,11 +2,14 @@
 body {
   font-family: "Roboto", Arial, sans-serif;
   margin: 0;
+  background-color: #fff;
+  color: #000;
 }
 
 /* ---------- Header ---------- */
 header {
   border-bottom: 1px solid #ccc;
+  background-color: #222; /* dark header */
 }
 
 .header-content {
@@ -18,12 +21,12 @@ header {
 .logo {
   width: 40px;
   height: auto;
-  filter: brightness(150%);
 }
 
 .site-name {
   margin-left: 0.5rem;
   font-weight: bold;
+  color: #fff; /* logo text contrast */
 }
 
 /* ---------- Hamburger Menu ---------- */
@@ -40,7 +43,7 @@ header {
 nav {
   display: none;
   flex-direction: column;
-  background-color: #111;
+  background-color: #222; /* dark for contrast */
 }
 
 nav.open {
@@ -48,19 +51,21 @@ nav.open {
 }
 
 nav a {
-  color: #fff;
+  color: #ffffff; /* white text for all nav links */
   padding: 0.75rem;
   text-decoration: none;
 }
 
 nav a.active {
-  background-color: #007acc;
-  color: #fff;
+  background-color: #555; /* medium gray */
+  color: #ffffff;          /* white text */
 }
 
 /* ---------- Main ---------- */
 main {
   padding: 1rem;
+  color: #000;
+  background-color: #fff;
 }
 
 /* ---------- About & Photo ---------- */
@@ -83,6 +88,7 @@ main {
   background-color: #e0e0e0;
   padding: 1rem;
   margin: 0;
+  color: #000;
 }
 
 /* ---------- Photo ---------- */
@@ -116,11 +122,13 @@ main {
   background-color: #d9d9d9;
   padding: 0.75rem;
   text-align: center;
+  color: #000;
 }
 
 .course.completed {
   background-color: #bcd;
   font-weight: bold;
+  color: #000;
 }
 
 /* ---------- Credits ---------- */
@@ -135,6 +143,8 @@ footer {
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
+  color: #000;
+  background-color: #f4f4f4;
 }
 
 footer p {
