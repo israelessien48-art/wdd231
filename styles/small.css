@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   margin: 0;
 }
 
@@ -42,7 +42,7 @@ nav.open {
 }
 
 nav a {
-  color: #fff;
+  color: #ffffff; /* ✅ FIXED CONTRAST */
   padding: 0.75rem;
   text-decoration: none;
 }
@@ -61,16 +61,19 @@ main {
 
 .about h2,
 .photo h2,
-.courses h2 {
+.courses h2,
+.resources h2 {
   background-color: #222;
   color: #fff;
   padding: 0.5rem;
   margin: 0;
 }
 
-.about p {
+.about p,
+.resources p {
   background-color: #e0e0e0;
   padding: 1rem;
+  margin: 0;
 }
 
 .photo img {
@@ -123,4 +126,5 @@ footer {
 .social svg {
   width: 28px;
   height: 28px;
+  fill: #000;
 }
