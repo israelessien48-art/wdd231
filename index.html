@@ -10,7 +10,7 @@
   <meta name="author" content="Israel Essien">
   <title>WDD 231 | Course Home</title>
 
-  <!-- ✅ GOOGLE FONTS (REQUIRED) -->
+  <!-- ✅ GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -29,7 +29,8 @@
 <body>
 <header>
   <div class="header-content">
-    <img src="images/logo.svg" alt="Site Logo" class="logo">
+    <!-- Updated logo for better visibility -->
+    <img src="images/logo.svg" alt="Site Logo" class="logo" style="filter: brightness(150%);">
     <span class="site-name">Israel Essien</span>
     <button id="menu" aria-label="Menu"></button>
   </div>
@@ -75,7 +76,7 @@
     <p id="credits"></p>
   </section>
 
-  <!-- ✅ SECTION 3 (REQUIRED BY RUBRIC) -->
+  <!-- ✅ SECTION 3 -->
   <section class="resources">
     <h2>Learning Resources</h2>
     <p>
@@ -106,8 +107,17 @@
     </a>
   </div>
 
+  <!-- ✅ Footer year and last modification -->
   <p>&copy; <span id="year"></span> • Israel Essien • Nigeria</p>
   <p id="lastModified"></p>
+
+  <script>
+    // Set current year
+    document.getElementById("year").textContent = new Date().getFullYear();
+    // Set last modified
+    document.getElementById("lastModified").textContent =
+      "Last Modification: " + document.lastModified;
+  </script>
 </footer>
 </body>
 </html>
