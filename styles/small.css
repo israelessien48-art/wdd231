@@ -40,17 +40,18 @@ nav {
   display: none;
   flex-direction: column;
   background-color: #222;
-  color: #ffffff; /* WCAG contrast fix */
 }
 
 nav.open {
   display: flex;
 }
 
+/* ✅ CONSOLIDATED NAV LINK RULE (NO DUPLICATES, WCAG FIX) */
 nav a {
   color: #ffffff;
   padding: 0.75rem;
   text-decoration: none;
+  display: block;
 }
 
 nav a.active {
