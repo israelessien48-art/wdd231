@@ -1,8 +1,10 @@
+/* ---------- Base Styles ---------- */
 body {
   font-family: "Roboto", Arial, sans-serif;
   margin: 0;
 }
 
+/* ---------- Header ---------- */
 header {
   border-bottom: 1px solid #ccc;
 }
@@ -15,6 +17,7 @@ header {
 
 .logo {
   width: 40px;
+  height: auto;
 }
 
 .site-name {
@@ -22,6 +25,7 @@ header {
   font-weight: bold;
 }
 
+/* ---------- Hamburger Menu ---------- */
 #menu {
   margin-left: auto;
   width: 32px;
@@ -31,10 +35,12 @@ header {
   cursor: pointer;
 }
 
+/* ---------- Navigation ---------- */
 nav {
   display: none;
   flex-direction: column;
   background-color: #222;
+  color: #ffffff; /* WCAG contrast fix */
 }
 
 nav.open {
@@ -42,7 +48,7 @@ nav.open {
 }
 
 nav a {
-  color: #ffffff; /* ✅ FIXED CONTRAST */
+  color: #ffffff;
   padding: 0.75rem;
   text-decoration: none;
 }
@@ -51,10 +57,12 @@ nav a.active {
   background-color: #444;
 }
 
+/* ---------- Main ---------- */
 main {
   padding: 1rem;
 }
 
+/* ---------- About & Photo ---------- */
 .about-photo {
   display: block;
 }
@@ -64,7 +72,7 @@ main {
 .courses h2,
 .resources h2 {
   background-color: #222;
-  color: #fff;
+  color: #ffffff;
   padding: 0.5rem;
   margin: 0;
 }
@@ -76,10 +84,14 @@ main {
   margin: 0;
 }
 
+/* ---------- Photo ---------- */
 .photo img {
   width: 100%;
+  height: auto;
+  background-color: #ccc;
 }
 
+/* ---------- Course Filters ---------- */
 .filters {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -87,6 +99,12 @@ main {
   margin: 1rem 0;
 }
 
+.filters button {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+/* ---------- Course List ---------- */
 #course-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -104,6 +122,13 @@ main {
   font-weight: bold;
 }
 
+/* ---------- Credits ---------- */
+#credits {
+  text-align: center;
+  margin-top: 0.75rem;
+}
+
+/* ---------- Footer ---------- */
 footer {
   border-top: 12px solid #222;
   text-align: center;
@@ -111,11 +136,16 @@ footer {
   font-size: 0.9rem;
 }
 
+footer p {
+  margin: 0.25rem 0;
+}
+
 #lastModified {
   font-size: 0.8rem;
   color: #555;
 }
 
+/* ---------- Social Icons ---------- */
 .social {
   display: flex;
   justify-content: center;
@@ -129,8 +159,6 @@ footer {
   fill: #000;
 }
 
-nav a {
-  color: #ffffff;
-  padding: 0.75rem;
-  text-decoration: none;
+.social a:hover svg {
+  fill: #555;
 }
