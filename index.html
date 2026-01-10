@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 231 Course Home Page for Israel Essien">
+  <meta name="author" content="Israel Essien">
+  <title>WDD 231 | Home</title>
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+<header>
+  <div class="header-content">
+    <img src="images/logo.svg" alt="Site Logo" class="logo">
+    <span class="site-name">Israel Essien</span>
+    <button id="menu" aria-label="Menu"></button>
+  </div>
+
+  <nav id="nav">
+    <a href="index.html" class="active">Home</a>
+    <a href="#">Chamber Project</a>
+    <a href="#">Final Project</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Home</h1>
+
+  <section class="about-photo">
+    <div class="about">
+      <h2>About Me</h2>
+      <p>
+        I am a web development student learning modern front-end technologies
+        including HTML, CSS, and JavaScript. I enjoy building accessible,
+        responsive websites that follow best practices.
+      </p>
+    </div>
+
+    <div class="photo">
+      <h2>Student Photo</h2>
+      <img src="images/student.webp" alt="Student Photo" loading="lazy">
+    </div>
+  </section>
+
+  <section class="courses">
+    <h2>Web Certificate Courses</h2>
+
+    <div class="filters">
+      <button data-filter="all">All</button>
+      <button data-filter="cse">CSE</button>
+      <button data-filter="wdd">WDD</button>
+    </div>
+
+    <div id="course-list"></div>
+    <p id="credits"></p>
+  </section>
+</main>
+
+<footer>
+  <div class="social">
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4.98 3.5C4.98 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.08 1 2.5 1s2.48 1.1 2.48 2.5zM0 8h5v16H0zM8 8h4.8v2.2h.1c.7-1.3 2.4-2.7 5-2.7 5.4 0 6.4 3.6 6.4 8.3V24h-5v-7.6c0-1.8 0-4.1-2.5-4.1s-2.9 1.9-2.9 4v7.7H8z"/>
+      </svg>
+    </a>
+
+    <!-- GitHub -->
+    <a href="https://github.com/" target="_blank" aria-label="GitHub">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.7 2.4 3.3 1.7.1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.4 1.1-3.2-.1-.3-.5-1.4.1-2.9 0 0 .9-.3 3 .1.9-.2 1.9-.4 2.9-.4s2 .1 2.9.4c2.1-.4 3-.1 3-.1.6 1.5.2 2.6.1 2.9.7.8 1.1 1.9 1.1 3.2 0 4.4-2.7 5.4-5.3 5.7.4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/>
+      </svg>
+    </a>
+
+    <!-- X -->
+    <a href="https://x.com/" target="_blank" aria-label="X">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M18.24 2H21.6l-7.35 8.4L22.8 22h-6.8l-5.32-6.93L4.6 22H1.2l7.85-8.97L1.2 2h6.97l4.8 6.26L18.24 2z"/>
+      </svg>
+    </a>
+  </div>
+
+  <p>&copy; <span id="year"></span> • Israel Essien • Nigeria</p>
+  <p id="lastModified"></p>
+</footer>
+</body>
+</html>

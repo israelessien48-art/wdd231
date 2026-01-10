@@ -1,0 +1,25 @@
+@media (min-width: 768px) {
+
+  nav {
+    display: flex !important;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .about-photo {
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+  }
+
+  .courses {
+    margin-top: 2rem;
+  }
+
+  .filters {
+    justify-content: center;
+  }
+}
