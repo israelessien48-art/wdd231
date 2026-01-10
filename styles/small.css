@@ -128,3 +128,9 @@ footer {
   height: 28px;
   fill: #000;
 }
+
+nav a {
+  color: #ffffff;
+  padding: 0.75rem;
+  text-decoration: none;
+}
