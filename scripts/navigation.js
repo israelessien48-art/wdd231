@@ -3,5 +3,4 @@ const nav = document.getElementById("nav");
 
 menuButton.addEventListener("click", () => {
   nav.classList.toggle("open");
-  menuButton.classList.toggle("open");
 });
