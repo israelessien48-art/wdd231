@@ -1,9 +1,10 @@
-@media (min-width: 40rem) {
+@media (min-width: 768px) {
   nav ul {
     justify-content: center;
   }
 
-  header {
-    text-align: center;
+  main {
+    max-width: 1100px;
+    margin: auto;
   }
 }

@@ -1,60 +1,58 @@
-{
-  "members": [
-    {
-      "name": "Alpha Tech",
-      "address": "12 Market Road",
-      "phone": "555-1234",
-      "website": "https://example.com",
-      "image": "member1.webp",
-      "membership": "Gold"
-    },
-    {
-      "name": "Bright Stores",
-      "address": "45 Main Street",
-      "phone": "555-5678",
-      "website": "https://example.com",
-      "image": "member2.webp",
-      "membership": "Silver"
-    },
-    {
-      "name": "City Logistics",
-      "address": "89 Industrial Way",
-      "phone": "555-9876",
-      "website": "https://example.com",
-      "image": "member3.webp",
-      "membership": "Bronze"
-    },
-    {
-      "name": "Delta Foods",
-      "address": "21 Food Plaza",
-      "phone": "555-2468",
-      "website": "https://example.com",
-      "image": "member4.webp",
-      "membership": "Gold"
-    },
-    {
-      "name": "Elite Fitness",
-      "address": "77 Wellness Ave",
-      "phone": "555-1357",
-      "website": "https://example.com",
-      "image": "member5.webp",
-      "membership": "Silver"
-    },
-    {
-      "name": "Future Media",
-      "address": "33 Broadcast Blvd",
-      "phone": "555-8642",
-      "website": "https://example.com",
-      "image": "member6.webp",
-      "membership": "Gold"
-    },
-    {
-      "name": "Green Energy",
-      "address": "9 Solar Street",
-      "phone": "555-7531",
-      "website": "https://example.com",
-      "image": "member7.webp",
-      "membership": "Bronze"
-    }
-  ]
-}
+[
+  {
+    "name": "Alpha Tech Solutions",
+    "address": "12 Innovation Drive",
+    "phone": "+234 801 111 2222",
+    "website": "https://example.com",
+    "image": "member1.jpg",
+    "membership": "Gold"
+  },
+  {
+    "name": "Bright Retailers",
+    "address": "45 Market Road",
+    "phone": "+234 802 333 4444",
+    "website": "https://example.com",
+    "image": "member2.jpg",
+    "membership": "Silver"
+  },
+  {
+    "name": "City Logistics",
+    "address": "9 Industrial Way",
+    "phone": "+234 803 555 6666",
+    "website": "https://example.com",
+    "image": "member3.jpg",
+    "membership": "Member"
+  },
+  {
+    "name": "Delta Security",
+    "address": "18 Safe Street",
+    "phone": "+234 804 777 8888",
+    "website": "https://example.com",
+    "image": "member4.jpg",
+    "membership": "Gold"
+  },
+  {
+    "name": "Eco Builders",
+    "address": "27 Green Avenue",
+    "phone": "+234 805 999 0000",
+    "website": "https://example.com",
+    "image": "member5.jpg",
+    "membership": "Silver"
+  },
+  {
+    "name": "Fusion Media",
+    "address": "33 Broadcast Lane",
+    "phone": "+234 806 121 2121",
+    "website": "https://example.com",
+    "image": "member6.jpg",
+    "membership": "Member"
+  },
+  {
+    "name": "Global Foods",
+    "address": "88 Culinary Blvd",
+    "phone": "+234 807 343 4343",
+    "website": "https://example.com",
+    "image": "member7.jpg",
+    "membership": "Gold"
+  }
+]
