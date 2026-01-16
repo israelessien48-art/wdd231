@@ -1,6 +1,12 @@
 const membersContainer = document.querySelector('#members');
 const gridButton = document.querySelector('#grid');
 const listButton = document.querySelector('#list');
+const menuButton = document.querySelector('#menuButton');
+const navigation = document.querySelector('#navigation');
+
+menuButton.addEventListener('click', () => {
+  navigation.classList.toggle('open');
+});
 
 async function getMembers() {
   const response = await fetch('data/members.json');

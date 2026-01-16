@@ -1,6 +1,15 @@
 @media (min-width: 768px) {
   nav ul {
+    flex-direction: row;
     justify-content: center;
+  }
+
+  #menuButton {
+    display: none;
+  }
+
+  #navigation {
+    display: block;
   }
 
   main {
