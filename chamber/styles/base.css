@@ -78,3 +78,23 @@ nav a.active {
 #members.list img {
   display: none;
 }
+
+/* Default (mobile) - hide nav */
+#navigation {
+  display: none;
+}
+
+/* When open - show nav */
+#navigation.open {
+  display: block;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  #navigation {
+    display: block;
+  }
+  #menuButton {
+    display: none;
+  }
+}
