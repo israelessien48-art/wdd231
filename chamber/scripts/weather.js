@@ -1,5 +1,5 @@
-const apiKey = "YOUR_API_KEY_HERE"; // Replace with your own API key
-const city = "London"; // Replace with your city
+const apiKey = "b60a4df20cef026d7cb3da0b51244f6d"; // Replace with your own API key
+const city = "Lagos"; // Replace with your city
 const units = "metric"; // metric = Celsius, imperial = Fahrenheit
 
 const currentTempEl = document.getElementById("current-temp");
