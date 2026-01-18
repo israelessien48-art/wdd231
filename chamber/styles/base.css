@@ -210,3 +210,10 @@ main {
 #members.list img {
   display: none;
 }
+
+/* Responsive Mobile Forecast */
+@media (max-width: 600px) {
+  #forecast {
+    flex-direction: column;
+  }
+}
