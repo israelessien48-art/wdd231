@@ -2,6 +2,7 @@
   --primary: #1f2933;
   --accent: #2563eb;
   --light: #ffffff;
+  --muted: #f5f5f5;
 }
 
 body {
@@ -16,6 +17,7 @@ header, footer {
   padding: 1rem;
 }
 
+/* NAVIGATION */
 nav ul {
   list-style: none;
   padding: 0;
@@ -41,16 +43,118 @@ nav a.active {
   cursor: pointer;
 }
 
+/* Default (mobile) - hide nav */
 #navigation {
   display: none;
 }
 
+/* When open - show nav */
 #navigation.open {
   display: block;
 }
 
+/* MAIN CONTENT */
+main {
+  padding: 1rem;
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  background: rgba(31, 41, 51, 0.75);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.hero-content h2 {
+  margin: 0 0 0.5rem 0;
+  color: var(--light);
+}
+
+.cta {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--light);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* EVENTS */
+.events {
+  margin-top: 2rem;
+  background: var(--muted);
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.events ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+/* WEATHER */
+.weather {
+  margin-top: 2rem;
+  background: var(--muted);
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+#forecast {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.forecast-item {
+  background: white;
+  padding: 0.75rem;
+  border-radius: 8px;
+}
+
+/* SPOTLIGHTS */
+.spotlights {
+  margin-top: 2rem;
+}
+
+#spotlight-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.spotlight-card {
+  background: var(--muted);
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.spotlight-card img {
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+}
+
+/* MOBILE LIST / GRID (directory page) */
 .controls {
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
 #members.grid {
@@ -64,7 +168,7 @@ nav a.active {
 }
 
 .member {
-  background: #f5f5f5;
+  background: var(--muted);
   padding: 1rem;
   border-radius: 6px;
 }
@@ -79,22 +183,28 @@ nav a.active {
   display: none;
 }
 
-/* Default (mobile) - hide nav */
-#navigation {
-  display: none;
-}
-
-/* When open - show nav */
-#navigation.open {
-  display: block;
-}
-
-/* Desktop */
+/* DESKTOP LAYOUT */
 @media (min-width: 768px) {
   #navigation {
     display: block;
   }
   #menuButton {
     display: none;
+  }
+
+  /* Spotlight cards show 3 columns on desktop */
+  #spotlight-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Forecast shows 3 columns on desktop */
+  #forecast {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Hero layout */
+  .hero-content {
+    bottom: 2rem;
+    left: 2rem;
   }
 }
