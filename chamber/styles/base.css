@@ -53,7 +53,6 @@ nav a.active {
   display: block;
 }
 
-/* MAIN CONTENT */
 main {
   padding: 1rem;
 }
@@ -188,6 +187,7 @@ main {
   #navigation {
     display: block;
   }
+
   #menuButton {
     display: none;
   }
