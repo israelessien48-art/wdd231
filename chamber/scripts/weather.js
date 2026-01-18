@@ -6,50 +6,38 @@ const currentTempEl = document.getElementById("current-temp");
 const weatherDescEl = document.getElementById("weather-desc");
 const forecastEl = document.getElementById("forecast");
 
-function formatDate(date) {
-  const options = { weekday: "short", month: "short", day: "numeric" };
-  return date.toLocaleDateString(undefined, options);
-}
-
 async function getWeather() {
-  const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=${units}&appid=${apiKey}`;
-
   try {
-    const response = await fetch(url);
-    const data = await response.json();
+    // 1. Get current weather
+    const currentUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${units}&appid=${apiKey}`;
+    const currentResponse = await fetch(currentUrl);
+    const currentData = await currentResponse.json();
 
-    // Current Weather
-    const current = data.list[0];
-    const temp = Math.round(current.main.temp);
-    const description = current.weather[0].description;
+    const temp = Math.round(currentData.main.temp);
+    const description = currentData.weather[0].description;
 
     currentTempEl.textContent = `Current Temperature: ${temp}°C`;
     weatherDescEl.textContent = `Conditions: ${description}`;
 
-    // 3-Day Forecast
+    // 2. Get forecast weather
+    const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=${units}&appid=${apiKey}`;
+    const forecastResponse = await fetch(forecastUrl);
+    const forecastData = await forecastResponse.json();
+
     forecastEl.innerHTML = "";
 
     const forecastByDay = {};
-
-    data.list.forEach((item) => {
-      const date = new Date(item.dt * 1000);
-      const day = date.toISOString().split("T")[0]; // YYYY-MM-DD
-
-      if (!forecastByDay[day]) {
-        forecastByDay[day] = [];
+    forecastData.list.forEach((item) => {
+      if (item.dt_txt.includes("12:00:00")) {
+        const date = item.dt_txt.split(" ")[0];
+        forecastByDay[date] = item;
       }
-      forecastByDay[day].push(item);
     });
 
-    const today = new Date().toISOString().split("T")[0];
+    const dates = Object.keys(forecastByDay).slice(1, 4);
 
-    // Get the next 3 days
-    const nextDays = Object.keys(forecastByDay)
-      .filter((d) => d > today)
-      .slice(0, 3);
-
-    nextDays.forEach((day) => {
-      const dayData = forecastByDay[day][0];
+    dates.forEach((date) => {
+      const dayData = forecastByDay[date];
       const dayTemp = Math.round(dayData.main.temp);
       const dayDesc = dayData.weather[0].description;
 
@@ -57,7 +45,7 @@ async function getWeather() {
       forecastItem.classList.add("forecast-item");
 
       forecastItem.innerHTML = `
-        <h3>${formatDate(new Date(day))}</h3>
+        <h3>${date}</h3>
         <p>${dayTemp}°C</p>
         <p>${dayDesc}</p>
       `;
