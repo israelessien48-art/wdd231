@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Home | Chamber of Commerce</title>
+
+  <meta name="description" content="Welcome to the Chamber of Commerce. Supporting local businesses, promoting economic growth, and building a stronger community.">
+  <meta name="author" content="Israel Essien">
+
+  <link rel="icon" href="images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <meta property="og:title" content="Chamber of Commerce Home">
+  <meta property="og:description" content="Connecting businesses and strengthening our local economy.">
+  <meta property="og:image" content="https://israelessien48-art.github.io/wdd231/chamber/images/hero.jpg">
+  <meta property="og:url" content="https://israelessien48-art.github.io/wdd231/chamber/index.html">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/spotlights.js" defer></script>
+  <script src="scripts/menu.js" defer></script>
+</head>
+
+<body>
+<header>
+  <h1>Chamber of Commerce</h1>
+
+  <button id="menuButton" aria-label="Toggle navigation">☰</button>
+
+  <nav id="navigation">
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="#">Join</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <img src="images/hero.jpg" alt="City skyline representing local businesses">
+    <div class="hero-content">
+      <h2>Building a Stronger Business Community</h2>
+      <a href="#" class="cta">Join the Chamber</a>
+    </div>
+  </section>
+
+  <!-- CURRENT EVENTS -->
+  <section class="events">
+    <h2>Current Events</h2>
+    <ul>
+      <li>Business Networking Mixer – February 20</li>
+      <li>Entrepreneur Workshop – March 5</li>
+      <li>Community Development Forum – March 18</li>
+    </ul>
+  </section>
+
+  <!-- WEATHER -->
+  <section class="weather">
+    <h2>Local Weather</h2>
+    <p id="current-temp"></p>
+    <p id="weather-desc"></p>
+    <div id="forecast"></div>
+  </section>
+
+  <!-- COMPANY SPOTLIGHTS -->
+  <section class="spotlights">
+    <h2>Member Spotlights</h2>
+    <div id="spotlight-container"></div>
+  </section>
+
+</main>
+
+<footer>
+  <p>
+    © <span id="year"></span> Israel Essien | WDD 231 |
+    Last Modified: <span id="lastModified"></span>
+  </p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("lastModified").textContent = document.lastModified;
+</script>
+</body>
+</html>
