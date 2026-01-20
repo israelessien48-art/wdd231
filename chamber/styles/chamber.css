@@ -59,6 +59,18 @@ input, select, textarea {
 
 /* Fix for dialog contrast issue */
 dialog {
-  color: #111;             /* dark text */
-  background-color: #fff;  /* keep white background */
+  color: #111;
+  background-color: #fff;
+}
+
+/* Responsive Navigation (no repeated selectors) */
+@media (max-width: 600px) {
+  nav ul {
+    flex-wrap: wrap;
+  }
+
+  nav li {
+    width: 100%;
+    text-align: center;
+  }
 }
