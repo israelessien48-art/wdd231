@@ -12,12 +12,6 @@
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Join the Chamber of Commerce">
-  <meta property="og:description" content="Submit your application to join the Chamber of Commerce and grow your business network.">
-  <meta property="og:image" content="https://israelessien48-art.github.io/wdd231/chamber/images/og-image.png">
-  <meta property="og:url" content="https://israelessien48-art.github.io/wdd231/chamber/join.html">
-
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,6 +23,7 @@
 
   <!-- JS -->
   <script defer src="scripts/join.js"></script>
+  <script defer src="scripts/nav.js"></script>
 </head>
 
 <body>
@@ -37,12 +32,15 @@
 </header>
 
 <nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="discover.html">Discover</a></li>
-    <li><a href="directory.html">Directory</a></li>
-    <li><a href="join.html" class="active">Join</a></li>
-  </ul>
+  <button id="menuButton" aria-label="Open menu">☰</button>
+  <div id="navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html" class="active">Join</a></li>
+    </ul>
+  </div>
 </nav>
 
 <main class="join-page">

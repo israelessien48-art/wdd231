@@ -8,6 +8,7 @@
 
   <link rel="stylesheet" href="styles/chamber.css">
   <script defer src="scripts/thankyou.js"></script>
+  <script defer src="scripts/nav.js"></script>
 </head>
 
 <body>
@@ -16,10 +17,13 @@
 </header>
 
 <nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="join.html" class="active">Join</a></li>
-  </ul>
+  <button id="menuButton" aria-label="Open menu">☰</button>
+  <div id="navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="join.html" class="active">Join</a></li>
+    </ul>
+  </div>
 </nav>
 
 <main class="thankyou">
