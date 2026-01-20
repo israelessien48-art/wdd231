@@ -56,3 +56,9 @@ input, select, textarea {
 .submission-info {
   padding: 1rem;
 }
+
+/* Fix for dialog contrast issue */
+dialog {
+  color: #111;             /* dark text */
+  background-color: #fff;  /* keep white background */
+}
