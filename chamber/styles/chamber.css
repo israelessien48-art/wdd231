@@ -1,0 +1,94 @@
+/* Base */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  color: #000;
+  background-color: #fff;
+}
+
+header, footer {
+  background-color: #003366;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #eaeaea;
+}
+
+nav a {
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: #000;
+}
+
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Layout */
+.join-container {
+  display: grid;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .join-container {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+/* Form */
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+input, select, textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Cards */
+.membership-cards {
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Animation */
+.animate {
+  animation: fadeIn 1s forwards;
+}
+
+.animate:nth-child(2) { animation-delay: 0.2s; }
+.animate:nth-child(3) { animation-delay: 0.4s; }
+.animate:nth-child(4) { animation-delay: 0.6s; }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Thank You */
+.submission-info {
+  padding: 1rem;
+}
