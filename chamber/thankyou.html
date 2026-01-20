@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Thank You</title>
+  <title>Thank You | Chamber of Commerce</title>
   <meta name="description" content="Thank you for applying for Chamber membership.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Thank You — Chamber Membership Application">
-  <meta property="og:description" content="Thank you for applying for Chamber membership. Your application has been received and will be reviewed shortly.">
+  <meta property="og:title" content="Thank You | Chamber Membership Application">
+  <meta property="og:description" content="Thank you for applying for Chamber membership. Your submission has been received.">
   <meta property="og:image" content="https://israelessien48-art.github.io/wdd231/chamber/images/og-image.png">
   <meta property="og:url" content="https://israelessien48-art.github.io/wdd231/chamber/thankyou.html">
 
@@ -23,7 +23,7 @@
 </header>
 
 <nav>
-  <button id="menuButton" aria-label="Open menu">☰</button>
+  <button id="menuButton" aria-label="Open menu" aria-expanded="false">☰</button>
   <div id="navigation">
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -33,6 +33,9 @@
 </nav>
 
 <main class="thankyou">
+  <!-- Hidden H1 for accessibility -->
+  <h1 class="sr-only">Thank You</h1>
+
   <h2>Thank You for Applying!</h2>
 
   <section class="submission-info">

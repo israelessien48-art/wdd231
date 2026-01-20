@@ -10,8 +10,8 @@
   <meta name="author" content="Israel Essien">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Join the Chamber of Commerce — Membership Application">
-  <meta property="og:description" content="Apply for Chamber membership to access business resources, networking events, and promotional opportunities.">
+  <meta property="og:title" content="Join the Chamber of Commerce – Apply for Membership">
+  <meta property="og:description" content="Submit your application to join the Chamber of Commerce and unlock networking, promotion, and business resources.">
   <meta property="og:image" content="https://israelessien48-art.github.io/wdd231/chamber/images/og-image.png">
   <meta property="og:url" content="https://israelessien48-art.github.io/wdd231/chamber/join.html">
 
@@ -38,7 +38,7 @@
 </header>
 
 <nav>
-  <button id="menuButton" aria-label="Open navigation menu">☰</button>
+  <button id="menuButton" aria-label="Open navigation menu" aria-expanded="false">☰</button>
 
   <div id="navigation">
     <ul>
@@ -51,6 +51,9 @@
 </nav>
 
 <main class="join-page">
+  <!-- Hidden H1 for accessibility -->
+  <h1 class="sr-only">Chamber Join Page</h1>
+
   <h2>Membership Application</h2>
 
   <div class="join-container">
@@ -59,46 +62,32 @@
 
       <label>
         First Name
-        <input type="text" name="fname" required
-               title="Enter your first name"
-               autocomplete="given-name">
+        <input type="text" name="fname" required title="Enter your first name" autocomplete="given-name">
       </label>
 
       <label>
         Last Name
-        <input type="text" name="lname" required
-               title="Enter your last name"
-               autocomplete="family-name">
+        <input type="text" name="lname" required title="Enter your last name" autocomplete="family-name">
       </label>
 
       <label>
         Organizational Title
-        <input type="text" name="orgtitle"
-               title="Your title within the organization"
-               autocomplete="organization-title"
-               pattern="[A-Za-z\- ]{7,}">
+        <input type="text" name="orgtitle" title="Your title within the organization" autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}">
       </label>
 
       <label>
         Email Address
-        <input type="email" name="email" required
-               title="Enter a valid email address"
-               autocomplete="email"
-               placeholder="example@email.com">
+        <input type="email" name="email" required title="Enter a valid email address" autocomplete="email" placeholder="example@email.com">
       </label>
 
       <label>
         Mobile Phone
-        <input type="tel" name="phone" required
-               title="Enter your mobile phone number"
-               autocomplete="tel">
+        <input type="tel" name="phone" required title="Enter your mobile phone number" autocomplete="tel">
       </label>
 
       <label>
         Business / Organization Name
-        <input type="text" name="business" required
-               title="Enter your business name"
-               autocomplete="organization">
+        <input type="text" name="business" required title="Enter your business name" autocomplete="organization">
       </label>
 
       <label>
@@ -123,7 +112,6 @@
     </form>
 
     <section class="membership-cards">
-
       <article class="card animate">
         <h3>NP Membership</h3>
         <p>No cost for non-profits.</p>
@@ -147,7 +135,6 @@
         <p>Premium promotion.</p>
         <button data-modal="goldModal">View Benefits</button>
       </article>
-
     </section>
   </div>
 
@@ -175,7 +162,6 @@
     <p>Premium homepage placement and exclusive events.</p>
     <button class="close-modal">Close</button>
   </dialog>
-
 </main>
 
 <footer>
