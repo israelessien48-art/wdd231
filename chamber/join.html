@@ -34,7 +34,7 @@
 
 <body>
 <header>
-  <h1>Chamber of Commerce</h1>
+  <p class="site-title">Chamber of Commerce</p>
 </header>
 
 <nav>
@@ -51,6 +51,7 @@
 </nav>
 
 <main class="join-page">
+  <!-- ✅ ONLY h1 on the page -->
   <h1>Join the Chamber of Commerce</h1>
   <h2>Membership Application</h2>
 
@@ -60,41 +61,39 @@
 
       <label>
         First Name
-        <input type="text" name="fname" required title="Enter your first name" autocomplete="given-name">
+        <input type="text" name="fname" required autocomplete="given-name">
       </label>
 
       <label>
         Last Name
-        <input type="text" name="lname" required title="Enter your last name" autocomplete="family-name">
+        <input type="text" name="lname" required autocomplete="family-name">
       </label>
 
       <label>
         Organizational Title
-        <input type="text" name="orgtitle" title="Your title within the organization"
-               autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}">
+        <input type="text" name="orgtitle" autocomplete="organization-title"
+               pattern="[A-Za-z\- ]{7,}">
       </label>
 
       <label>
         Email Address
-        <input type="email" name="email" required title="Enter a valid email address"
-               autocomplete="email" placeholder="example@email.com">
+        <input type="email" name="email" required autocomplete="email"
+               placeholder="example@email.com">
       </label>
 
       <label>
         Mobile Phone
-        <input type="tel" name="phone" required title="Enter your mobile phone number"
-               autocomplete="tel">
+        <input type="tel" name="phone" required autocomplete="tel">
       </label>
 
       <label>
         Business / Organization Name
-        <input type="text" name="business" required title="Enter your business name"
-               autocomplete="organization">
+        <input type="text" name="business" required autocomplete="organization">
       </label>
 
       <label>
         Membership Level
-        <select name="membership" required title="Select a membership level">
+        <select name="membership" required>
           <option value="">Select a level</option>
           <option value="np">NP Membership</option>
           <option value="bronze">Bronze Membership</option>
@@ -105,7 +104,7 @@
 
       <label>
         Business Description
-        <textarea name="description" title="Describe your organization"></textarea>
+        <textarea name="description"></textarea>
       </label>
 
       <input type="hidden" name="timestamp" id="timestamp">
