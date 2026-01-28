@@ -15,6 +15,7 @@
   <meta property="og:image" content="https://israelessien48-art.github.io/wdd231/chamber/images/og-image.png">
   <meta property="og:url" content="https://israelessien48-art.github.io/wdd231/chamber/join.html">
 
+  <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico">
 
   <!-- Google Fonts -->
@@ -33,7 +34,9 @@
 
 <body>
 
-<!-- ❌ HEADER REMOVED TO PREVENT JS-INJECTED h1 -->
+<header class="site-header">
+  <p class="site-title">Chamber of Commerce</p>
+</header>
 
 <nav>
   <button id="menuButton" aria-label="Open navigation menu" aria-expanded="false">☰</button>
@@ -48,7 +51,7 @@
 </nav>
 
 <main class="join-page">
-  <!-- ✅ ONLY h1 ON PAGE -->
+  <!-- ✅ Only h1 on the page -->
   <h1>Join the Chamber of Commerce</h1>
   <h2>Membership Application</h2>
 
@@ -58,39 +61,37 @@
 
       <label>
         First Name
-        <input type="text" name="fname" required autocomplete="given-name">
+        <input type="text" name="fname" title="Enter your first name" required autocomplete="given-name">
       </label>
 
       <label>
         Last Name
-        <input type="text" name="lname" required autocomplete="family-name">
+        <input type="text" name="lname" title="Enter your last name" required autocomplete="family-name">
       </label>
 
       <label>
         Organizational Title
-        <input type="text" name="orgtitle" autocomplete="organization-title"
-               pattern="[A-Za-z\- ]{7,}">
+        <input type="text" name="orgtitle" title="Enter your position or role in the organization" autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}">
       </label>
 
       <label>
         Email Address
-        <input type="email" name="email" required autocomplete="email"
-               placeholder="example@email.com">
+        <input type="email" name="email" title="Enter a valid email address" required autocomplete="email" placeholder="example@email.com">
       </label>
 
       <label>
         Mobile Phone
-        <input type="tel" name="phone" required autocomplete="tel">
+        <input type="tel" name="phone" title="Enter your mobile phone number" required autocomplete="tel">
       </label>
 
       <label>
         Business / Organization Name
-        <input type="text" name="business" required autocomplete="organization">
+        <input type="text" name="business" title="Enter your business or organization name" required autocomplete="organization">
       </label>
 
       <label>
         Membership Level
-        <select name="membership" required>
+        <select name="membership" required title="Select a membership level">
           <option value="">Select a level</option>
           <option value="np">NP Membership</option>
           <option value="bronze">Bronze Membership</option>
@@ -101,7 +102,7 @@
 
       <label>
         Business Description
-        <textarea name="description"></textarea>
+        <textarea name="description" title="Describe your business or organization"></textarea>
       </label>
 
       <input type="hidden" name="timestamp" id="timestamp">
@@ -136,6 +137,7 @@
     </section>
   </div>
 
+  <!-- MODALS -->
   <dialog id="npModal">
     <h4>NP Membership Benefits</h4>
     <p>Free membership, community networking, directory listing.</p>
