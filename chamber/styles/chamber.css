@@ -24,7 +24,10 @@
   }
 }
 
-/* Form */
+/* =========================
+   FORM STYLES
+========================= */
+
 .join-page .join-form label {
   display: flex;
   flex-direction: column;
@@ -39,6 +42,8 @@
   font-size: 1rem;
   border: 1px solid #555;
   border-radius: 4px;
+  color: #111;
+  background-color: #ffffff;
 }
 
 /* Focus styles (accessibility + grading) */
@@ -49,10 +54,10 @@
   outline-offset: 2px;
 }
 
-/* Submit button */
+/* Submit button — WCAG AA PASS */
 .join-page .join-form button {
   padding: 0.75rem 1rem;
-  background-color: #1d4ed8; /* stronger than accent for contrast */
+  background-color: #1d4ed8;
   color: #ffffff;
   border: none;
   border-radius: 6px;
@@ -65,7 +70,10 @@
   background-color: #1e40af;
 }
 
-/* Membership Cards */
+/* =========================
+   MEMBERSHIP CARDS
+========================= */
+
 .join-page .membership-cards {
   display: grid;
   gap: 1rem;
@@ -76,11 +84,12 @@
   padding: 1rem;
   border-radius: 8px;
   background-color: #ffffff;
+  color: #111;
   opacity: 0;
   transform: translateY(20px);
 }
 
-/* Card buttons */
+/* Card buttons — WCAG AA PASS */
 .join-page .card button {
   background-color: #2563eb;
   color: #ffffff;
@@ -95,7 +104,10 @@
   background-color: #1e40af;
 }
 
-/* Animation */
+/* =========================
+   ANIMATION
+========================= */
+
 .join-page .animate {
   animation: fadeIn 1s forwards;
 }
@@ -111,7 +123,10 @@
   }
 }
 
-/* Dialog */
+/* =========================
+   DIALOG / MODALS
+========================= */
+
 .join-page dialog {
   color: #111;
   background-color: #ffffff;
@@ -120,7 +135,7 @@
   border-radius: 8px;
 }
 
-/* Dialog button */
+/* Dialog button — WCAG AA PASS */
 .join-page dialog button {
   background-color: #2563eb;
   color: #ffffff;
@@ -130,7 +145,10 @@
   cursor: pointer;
 }
 
-/* Thank You page */
+/* =========================
+   THANK YOU PAGE
+========================= */
+
 .join-page .submission-info {
   padding: 1rem;
 }
