@@ -6,7 +6,7 @@
 
   <title>Discover | Chamber of Commerce</title>
 
-  <!-- REQUIRED META -->
+  <!-- META -->
   <meta name="description" content="Discover local attractions, businesses, and features of our Chamber of Commerce community.">
   <meta name="author" content="Israel Essien">
 
@@ -24,15 +24,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
+  <!-- STYLES -->
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/larger.css">
 
+  <!-- DISCOVER SCRIPT -->
   <script type="module" src="scripts/discover.js" defer></script>
 </head>
 
 <body>
   <header>
-    <h1>Chamber of Commerce</h1>
+    <span class="site-title">Chamber of Commerce</span>
     <button id="menuButton">☰</button>
   </header>
 
@@ -46,12 +48,15 @@
   </nav>
 
   <main>
-    <h2>Discover Our Community</h2>
+    <h1>Discover | Chamber of Commerce</h1>
+    <h2>Explore Our Community</h2>
 
+    <!-- localStorage visit message -->
     <section id="visit-message" class="visit-message"></section>
 
+    <!-- CARDS -->
     <section class="cards" id="discover-cards">
-      <!-- Cards injected by JavaScript -->
+      <!-- Cards injected by discover.js -->
     </section>
   </main>
 
