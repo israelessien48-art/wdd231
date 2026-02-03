@@ -1,17 +1,16 @@
-import { discoverItems } from "../data/discover.mjs";
+import { items } from "../data/discoverData.mjs";
 
-const cardsContainer = document.querySelector("#discover-cards");
+const cardsContainer = document.getElementById("discover-cards");
 
-discoverItems.forEach((item, index) => {
+items.forEach(item => {
   const card = document.createElement("article");
-  card.classList.add("card");
-  card.style.gridArea = `card${index + 1}`;
+  card.className = "card";
 
   card.innerHTML = `
-    <h2>${item.title}</h2>
     <figure>
       <img src="${item.image}" alt="${item.title}" loading="lazy">
     </figure>
+    <h2>${item.title}</h2>
     <address>${item.address}</address>
     <p>${item.description}</p>
     <button>Learn More</button>
@@ -20,22 +19,19 @@ discoverItems.forEach((item, index) => {
   cardsContainer.appendChild(card);
 });
 
-// localStorage visit message
-const messageBox = document.querySelector("#visit-message");
+// localStorage visitor message
+const visitMessageDiv = document.getElementById("visit-message");
 const lastVisit = localStorage.getItem("lastVisit");
 const now = Date.now();
 
 if (!lastVisit) {
-  messageBox.textContent = "Welcome! Let us know if you have any questions.";
+  visitMessageDiv.textContent = "Welcome! Let us know if you have any questions.";
 } else {
-  const days = Math.floor((now - lastVisit) / (1000 * 60 * 60 * 24));
-
-  if (days < 1) {
-    messageBox.textContent = "Back so soon! Awesome!";
-  } else if (days === 1) {
-    messageBox.textContent = "You last visited 1 day ago.";
+  const diffDays = Math.floor((now - lastVisit) / (1000 * 60 * 60 * 24));
+  if (diffDays < 1) {
+    visitMessageDiv.textContent = "Back so soon! Awesome!";
   } else {
-    messageBox.textContent = `You last visited ${days} days ago.`;
+    visitMessageDiv.textContent = `You last visited ${diffDays} ${diffDays === 1 ? "day" : "days"} ago.`;
   }
 }
 
