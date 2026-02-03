@@ -25,6 +25,20 @@
 
   <!-- JS -->
   <script type="module" src="scripts/discover.js"></script>
+
+  <style>
+    /* Visually hide headings while keeping them accessible to screen readers */
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      border: 0;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -41,8 +55,13 @@
   </header>
 
   <main>
-    <section id="visit-message" class="visit-message"></section>
-    <section class="cards" id="discover-cards"></section>
+    <section id="visit-message" class="visit-message">
+      <h2 class="visually-hidden">Visitor Message</h2>
+    </section>
+
+    <section class="cards" id="discover-cards">
+      <h2 class="visually-hidden">Discover Cards</h2>
+    </section>
   </main>
 
   <footer>

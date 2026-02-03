@@ -1,10 +1,50 @@
 [
-  {"title":"Item 1","address":"123 Main St","description":"A fun place to visit in our community.","image":"images/item1.jpg"},
-  {"title":"Item 2","address":"456 Oak Ave","description":"A historical landmark worth seeing.","image":"images/item2.jpg"},
-  {"title":"Item 3","address":"789 Pine Rd","description":"A popular spot for families.","image":"images/item3.jpg"},
-  {"title":"Item 4","address":"101 Elm St","description":"A local favorite for entertainment.","image":"images/item4.jpg"},
-  {"title":"Item 5","address":"202 Maple Dr","description":"Beautiful park and outdoor space.","image":"images/item5.jpg"},
-  {"title":"Item 6","address":"303 Cedar Ln","description":"Cultural center with events year-round.","image":"images/item6.jpg"},
-  {"title":"Item 7","address":"404 Birch Blvd","description":"Shopping and dining area.","image":"images/item7.jpg"},
-  {"title":"Item 8","address":"505 Walnut Way","description":"Museum and historical exhibitions.","image":"images/item8.jpg"}
+  {
+    "title": "Central Park",
+    "image": "images/item1.jpg",
+    "address": "123 Main St, Your City",
+    "description": "A beautiful urban park featuring walking trails, picnic areas, and playgrounds."
+  },
+  {
+    "title": "City Museum",
+    "image": "images/item2.jpg",
+    "address": "456 Museum Ave, Your City",
+    "description": "Explore local history, art, and interactive exhibits at the city museum."
+  },
+  {
+    "title": "Downtown Market",
+    "image": "images/item3.jpg",
+    "address": "789 Market Rd, Your City",
+    "description": "A bustling market with fresh produce, crafts, and local foods."
+  },
+  {
+    "title": "Riverside Walkway",
+    "image": "images/item4.jpg",
+    "address": "101 River St, Your City",
+    "description": "Enjoy scenic views along the river, with bike paths and benches."
+  },
+  {
+    "title": "City Theater",
+    "image": "images/item5.jpg",
+    "address": "202 Theater Ln, Your City",
+    "description": "Catch live performances, plays, and concerts at the historic theater."
+  },
+  {
+    "title": "Art Gallery",
+    "image": "images/item6.jpg",
+    "address": "303 Art Blvd, Your City",
+    "description": "Local and international art exhibits in a modern gallery space."
+  },
+  {
+    "title": "Botanical Gardens",
+    "image": "images/item7.jpg",
+    "address": "404 Garden Way, Your City",
+    "description": "Discover native and exotic plants across beautifully landscaped gardens."
+  },
+  {
+    "title": "Aquarium",
+    "image": "images/item8.jpg",
+    "address": "505 Ocean Dr, Your City",
+    "description": "See marine life up close, from colorful fish to interactive touch tanks."
+  }
 ]
