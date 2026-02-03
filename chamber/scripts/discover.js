@@ -1,43 +1,49 @@
-// scripts/discover.js
-import { items } from "../data/discoverData.mjs";
+// Menu toggle
+const menuButton = document.getElementById('menuButton');
+const nav = document.getElementById('navigation');
 
-const cardsContainer = document.getElementById("discover-cards");
-
-// Build cards dynamically
-items.forEach((item, index) => {
-  const card = document.createElement("article");
-  card.className = "card";
-  card.style.gridArea = `card${index + 1}`;
-
-  card.innerHTML = `
-    <h2>${item.title}</h2>
-    <figure>
-      <img src="images/${item.image}" alt="${item.alt}" loading="lazy">
-    </figure>
-    <address>${item.address}</address>
-    <p>${item.description}</p>
-    <button>Learn More</button>
-  `;
-
-  cardsContainer.appendChild(card);
+menuButton.addEventListener('click', () => {
+  nav.classList.toggle('open');
 });
 
-// localStorage visit message
-const visitMessage = document.getElementById("visit-message");
-const lastVisit = localStorage.getItem("lastVisit");
+// Display visit message using localStorage
+const visitMessage = document.getElementById('visit-message');
+const lastVisit = localStorage.getItem('lastVisit');
 const now = Date.now();
 
 if (!lastVisit) {
   visitMessage.textContent = "Welcome! Let us know if you have any questions.";
 } else {
-  const days = Math.floor((now - lastVisit) / (1000 * 60 * 60 * 24));
-  if (days < 1) {
+  const diffDays = Math.floor((now - lastVisit) / (1000*60*60*24));
+  if (diffDays === 0) {
     visitMessage.textContent = "Back so soon! Awesome!";
-  } else if (days === 1) {
-    visitMessage.textContent = "You last visited 1 day ago.";
   } else {
-    visitMessage.textContent = `You last visited ${days} days ago.`;
+    visitMessage.textContent = `You last visited ${diffDays} day${diffDays > 1 ? 's' : ''} ago.`;
   }
 }
 
-localStorage.setItem("lastVisit", now);
+localStorage.setItem('lastVisit', now);
+
+// Build cards from JSON
+const cardsContainer = document.getElementById('discover-cards');
+
+fetch('data/discover.json')
+  .then(res => res.json())
+  .then(items => {
+    items.forEach((item, i) => {
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.id = `card${i+1}`;
+      card.innerHTML = `
+        <h2>${item.title}</h2>
+        <figure>
+          <img src="${item.image}" alt="${item.title}" loading="lazy">
+        </figure>
+        <address>${item.address}</address>
+        <p>${item.description}</p>
+        <button>Learn More</button>
+      `;
+      cardsContainer.appendChild(card);
+    });
+  })
+  .catch(err => console.error('Error loading JSON:', err));
