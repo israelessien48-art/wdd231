@@ -3,54 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Discover | Chamber of Commerce</title>
-
   <meta name="description" content="Discover local attractions, businesses, and features of our Chamber of Commerce community.">
   <meta name="author" content="Israel Essien">
 
-  <link rel="icon" href="images/favicon.ico">
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
+  <!-- Open Graph / Social Sharing -->
   <meta property="og:title" content="Discover Our Community | Chamber of Commerce">
   <meta property="og:description" content="Explore attractions, businesses, and highlights that make our chamber community unique.">
   <meta property="og:image" content="https://israelessien48-art.github.io/wdd231/chamber/images/item1.jpg">
   <meta property="og:url" content="https://israelessien48-art.github.io/wdd231/chamber/discover.html">
 
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/larger.css">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/larger.css">
-
+  <!-- JavaScript -->
   <script type="module" src="scripts/discover.js"></script>
 </head>
-
 <body>
   <header>
-    <span class="site-title">Chamber of Commerce</span>
+    <h1>Chamber of Commerce</h1>
     <button id="menuButton">☰</button>
+    <nav id="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html" class="active">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav id="navigation">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="discover.html" class="active">Discover</a></li>
-      <li><a href="directory.html">Directory</a></li>
-      <li><a href="join.html">Join</a></li>
-    </ul>
-  </nav>
-
   <main>
-    <h1>Discover | Chamber of Commerce</h1>
-    <h2>Explore Our Community</h2>
+    <!-- Visitor Message -->
+    <section id="visit-message" class="visit-message"></section>
 
-    <div id="visit-message" class="visit-message"></div>
-    <div class="cards" id="discover-cards"></div>
+    <!-- Discover Cards -->
+    <section id="discover-cards" class="cards"></section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Chamber of Commerce</p>
+    <p>&copy; 2026 BYU-Pathway Worldwide | All rights reserved</p>
   </footer>
+
+  <!-- Optional: Mobile nav toggle -->
+  <script>
+    const menuButton = document.getElementById("menuButton");
+    const navigation = document.getElementById("navigation");
+
+    menuButton.addEventListener("click", () => {
+      navigation.classList.toggle("open");
+    });
+  </script>
 </body>
 </html>

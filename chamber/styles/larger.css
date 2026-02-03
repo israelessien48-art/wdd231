@@ -1,3 +1,4 @@
+/* css/larger.css */
 @media (min-width: 768px) {
   nav ul {
     flex-direction: row;
@@ -18,10 +19,7 @@
   }
 }
 
-/* =========================
-   DISCOVER PAGE LAYOUTS
-   ========================= */
-
+/* Medium screens */
 @media (min-width: 641px) {
   .cards {
     grid-template-areas:
@@ -32,6 +30,7 @@
   }
 }
 
+/* Large screens */
 @media (min-width: 1025px) {
   .cards {
     grid-template-areas:
@@ -41,14 +40,9 @@
       "card8 card8 card8";
   }
 
-  /* Define transition on base state (W3C-compliant) */
-  .card img {
-    transition: transform 0.3s ease, filter 0.3s ease;
-  }
-
-  /* Hover effect — desktop only */
   .card img:hover {
     transform: scale(1.05);
     filter: brightness(1.1);
+    transition: 0.3s ease;
   }
 }

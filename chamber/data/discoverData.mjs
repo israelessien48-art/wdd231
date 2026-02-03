@@ -1,58 +1,59 @@
-export const discoverItems = [
+// data/discoverData.mjs
+export const items = [
   {
-    title: "Central City Park",
-    address: "100 Park Avenue, Central City",
-    description:
-      "A large public park offering walking trails, green spaces, and family-friendly recreational areas.",
-    image: "images/item1.jpg"
+    title: "Museum of Art",
+    image: "item1.jpg",
+    alt: "Museum of Art exterior",
+    address: "123 Main St",
+    description: "Explore local and contemporary art exhibits."
   },
   {
-    title: "Community History Museum",
-    address: "45 Heritage Road, Central City",
-    description:
-      "A museum showcasing the history, culture, and growth of the local community over the years.",
-    image: "images/item2.jpg"
+    title: "City Park",
+    image: "item2.jpg",
+    alt: "City Park fountain",
+    address: "456 Park Ave",
+    description: "Relax in the lush green spaces and playgrounds."
   },
   {
-    title: "Downtown Market Square",
-    address: "210 Market Street, Central City",
-    description:
-      "A vibrant marketplace featuring local vendors, fresh produce, and weekly community events.",
-    image: "images/item3.jpg"
+    title: "Historic Theater",
+    image: "item3.jpg",
+    alt: "Historic Theater entrance",
+    address: "789 Broadway",
+    description: "Catch live performances and classic plays."
   },
   {
-    title: "Riverfront Walkway",
-    address: "78 Riverside Drive, Central City",
-    description:
-      "A scenic riverside walkway perfect for jogging, biking, and enjoying views of the water.",
-    image: "images/item4.jpg"
+    title: "Science Center",
+    image: "item4.jpg",
+    alt: "Science Center exhibits",
+    address: "101 Science Blvd",
+    description: "Interactive exhibits for all ages."
   },
   {
-    title: "Civic Arts Center",
-    address: "12 Culture Lane, Central City",
-    description:
-      "A modern arts center hosting exhibitions, performances, and educational workshops.",
-    image: "images/item5.jpg"
+    title: "Botanical Garden",
+    image: "item5.jpg",
+    alt: "Botanical Garden flowers",
+    address: "202 Greenway Ln",
+    description: "Walk among exotic plants and beautiful gardens."
   },
   {
-    title: "Central Sports Complex",
-    address: "500 Stadium Boulevard, Central City",
-    description:
-      "A multi-purpose sports complex offering facilities for soccer, basketball, and fitness programs.",
-    image: "images/item6.jpg"
+    title: "Local Brewery",
+    image: "item6.jpg",
+    alt: "Local Brewery tasting room",
+    address: "303 Brew St",
+    description: "Sample craft beers made in our city."
   },
   {
-    title: "Technology Innovation Hub",
-    address: "88 Innovation Way, Central City",
-    description:
-      "A collaborative space supporting startups, entrepreneurs, and technology-focused businesses.",
-    image: "images/item7.jpg"
+    title: "Aquarium",
+    image: "item7.jpg",
+    alt: "Aquarium fish tank",
+    address: "404 Ocean Ave",
+    description: "Discover marine life from around the world."
   },
   {
-    title: "Lakeside Nature Reserve",
-    address: "300 Lakeview Road, Central City",
-    description:
-      "A protected natural area with wildlife viewing, picnic spots, and peaceful outdoor trails.",
-    image: "images/item8.jpg"
+    title: "City Library",
+    image: "item8.jpg",
+    alt: "City Library building",
+    address: "505 Book Rd",
+    description: "A hub for learning, reading, and community events."
   }
 ];
