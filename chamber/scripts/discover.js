@@ -1,4 +1,4 @@
-import { items } from "../data/discoverData.mjs";
+import { items } from "../data/discoverdata.mjs";
 
 const cardsContainer = document.getElementById("discover-cards");
 
