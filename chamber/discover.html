@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="css/larger.css">
 
   <!-- DISCOVER SCRIPT -->
-  <script type="module" src="scripts/discover.js" defer></script>
+  <script type="module" src="scripts/discover.js"></script>
 </head>
 
 <body>
@@ -48,16 +48,15 @@
   </nav>
 
   <main>
+    <!-- H1 inside main for W3C -->
     <h1>Discover | Chamber of Commerce</h1>
     <h2>Explore Our Community</h2>
 
-    <!-- localStorage visit message -->
-    <section id="visit-message" class="visit-message"></section>
+    <!-- Visitor message via localStorage -->
+    <div id="visit-message" class="visit-message"></div>
 
-    <!-- CARDS -->
-    <section class="cards" id="discover-cards">
-      <!-- Cards injected by discover.js -->
-    </section>
+    <!-- Cards injected by JS -->
+    <div class="cards" id="discover-cards"></div>
   </main>
 
   <footer>
