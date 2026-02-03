@@ -9,7 +9,6 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   color: #111;
-  background-color: var(--muted);
 }
 
 header,
@@ -17,7 +16,6 @@ footer {
   background-color: var(--primary);
   color: var(--light);
   padding: 1rem;
-  text-align: center;
 }
 
 nav ul {
@@ -57,20 +55,6 @@ main {
   padding: 1rem;
 }
 
-/* Visitor message */
-.visit-message {
-  background-color: var(--accent);
-  color: var(--light);
-  padding: 1rem;
-  border-radius: 8px;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-/* =========================
-   DISCOVER PAGE (MOBILE)
-   ========================= */
-
 .cards {
   display: grid;
   grid-template-areas:
@@ -83,14 +67,14 @@ main {
     "card7"
     "card8";
   gap: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .card {
   background-color: var(--light);
   padding: 1rem;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .card h2 {
@@ -122,8 +106,4 @@ main {
   padding: 0.5rem 1rem;
   border-radius: 6px;
   cursor: pointer;
-}
-
-.card button:hover {
-  background-color: #1d4ed8; /* slightly darker blue on hover */
 }

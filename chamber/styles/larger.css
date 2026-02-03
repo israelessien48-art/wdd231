@@ -1,5 +1,4 @@
-/* Medium screens (641px - 1024px) */
-@media (min-width: 641px) {
+@media (min-width: 768px) {
   nav ul {
     flex-direction: row;
     justify-content: center;
@@ -14,29 +13,35 @@
   }
 
   main {
-    max-width: 1024px;
+    max-width: 1100px;
     margin: auto;
-  }
-
-  /* Grid layout for medium screens */
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Large screens (1025px+) */
-@media (min-width: 1025px) {
-  main {
-    max-width: 1200px;
-  }
-
+/* Medium screens */
+@media (min-width: 641px) {
   .cards {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6"
+      "card7 card8";
+  }
+}
+
+/* Large screens */
+@media (min-width: 1025px) {
+  .cards {
+    grid-template-areas:
+      "card1 card1 card2"
+      "card3 card4 card2"
+      "card5 card6 card7"
+      "card8 card8 card8";
   }
 
-  /* Hover effect only for larger screens */
-  .card:hover {
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  .card img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+    transition: 0.3s ease;
   }
 }
