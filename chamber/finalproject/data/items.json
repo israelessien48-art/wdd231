@@ -1,0 +1,17 @@
+[
+    {"name":"Yosemite","state":"California","established":"1890","visitors":"4M","image":"yosemite.jpg"},
+    {"name":"Zion","state":"Utah","established":"1919","visitors":"3.6M","image":"zion.jpg"},
+    {"name":"Yellowstone","state":"Wyoming","established":"1872","visitors":"4.8M","image":"yellowstone.jpg"},
+    {"name":"Grand Canyon","state":"Arizona","established":"1919","visitors":"5.9M","image":"grandcanyon.jpg"},
+    {"name":"Glacier","state":"Montana","established":"1910","visitors":"3M","image":"glacier.jpg"},
+    {"name":"Acadia","state":"Maine","established":"1916","visitors":"3.5M","image":"acadia.jpg"},
+    {"name":"Everglades","state":"Florida","established":"1947","visitors":"1M","image":"everglades.jpg"},
+    {"name":"Rocky Mountain","state":"Colorado","established":"1915","visitors":"4.5M","image":"rockymountain.jpg"},
+    {"name":"Olympic","state":"Washington","established":"1938","visitors":"3.2M","image":"olympic.jpg"},
+    {"name":"Grand Teton","state":"Wyoming","established":"1929","visitors":"3.4M","image":"grandteton.jpg"},
+    {"name":"Arches","state":"Utah","established":"1971","visitors":"1.5M","image":"arches.jpg"},
+    {"name":"Sequoia","state":"California","established":"1890","visitors":"1.2M","image":"sequoia.jpg"},
+    {"name":"Bryce Canyon","state":"Utah","established":"1928","visitors":"2.3M","image":"brycecanyon.jpg"},
+    {"name":"Joshua Tree","state":"California","established":"1994","visitors":"2.8M","image":"joshuatree.jpg"},
+    {"name":"Mount Rainier","state":"Washington","established":"1899","visitors":"2.5M","image":"mtrainier.jpg"}
+]

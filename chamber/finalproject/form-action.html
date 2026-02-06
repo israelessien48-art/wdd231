@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+    <meta name="author" content="Israel Essien">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">National Parks</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="attributions.html">Attributions</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h2>Form Submission Result</h2>
+    <div id="form-result"></div>
+</main>
+
+<footer>
+    <p>&copy; 2026 Israel Essien | <a href="https://www.youtube.com/yourvideolink" target="_blank">Project Video</a></p>
+</footer>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const resultDiv = document.getElementById('form-result');
+    resultDiv.innerHTML = `
+        <p><strong>Name:</strong> ${params.get('name')}</p>
+        <p><strong>Email:</strong> ${params.get('email')}</p>
+        <p><strong>Message:</strong> ${params.get('message')}</p>
+    `;
+</script>
+</body>
+</html>
