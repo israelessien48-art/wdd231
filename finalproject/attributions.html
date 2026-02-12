@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attributions - National Parks Explorer</title>
+
     <meta name="description" content="Credits for images and content used in the National Parks Explorer project by Israel Essien.">
     <meta name="author" content="Israel Essien">
     <link rel="icon" href="images/favicon.ico">
@@ -11,18 +12,29 @@
     <!-- Open Graph -->
     <meta property="og:title" content="Attributions - National Parks Explorer">
     <meta property="og:description" content="Credits for images and content used in the National Parks Explorer project by Israel Essien.">
-    <meta property="og:image" content="https://israelessien48-art.github.io/wdd231/images/brycecanyon.jpg">
+    <meta property="og:image" content="https://israelessien48-art.github.io/wdd231/finalproject/images/brycecanyon.jpg">
     <meta property="og:url" content="https://israelessien48-art.github.io/wdd231/finalproject/attributions.html">
+
+    <!-- Google Fonts (REQUIRED) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript (REQUIRED on all pages) -->
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/modal.js"></script>
 </head>
+
 <body>
 <header>
     <nav>
         <div class="logo">National Parks</div>
-        <ul class="nav-links">
+        <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+        <ul class="nav-links" id="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="explore.html">Explore</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -34,13 +46,19 @@
 <main>
     <h1>Attributions</h1>
     <ul>
-        <li>Images from free web-optimized sources, licensed for educational use.</li>
-        <li>Project content by Israel Essien.</li>
+        <li>Images sourced from web-optimized, educational-use resources.</li>
+        <li>Project content created by Israel Essien.</li>
     </ul>
 </main>
 
 <footer>
-    <p>&copy; 2026 Israel Essien | <a href="https://www.youtube.com/yourvideolink" target="_blank">Project Video</a></p>
+    <p>
+        &copy; 2026 Israel Essien |
+        <a href="https://www.youtube.com/yourvideolink" target="_blank">
+            Project Video
+        </a>
+    </p>
 </footer>
+
 </body>
 </html>
