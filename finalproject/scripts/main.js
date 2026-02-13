@@ -1,7 +1,9 @@
 import { parksData } from './data.js';
 import { showModal } from './modal.js';
 
-const featuredContainer = document.getElementById('featured-parks') || document.getElementById('parks-list');
+const featuredContainer =
+  document.querySelector('#featured-parks .cards-container') ||
+  document.getElementById('parks-list');
 
 function displayParks(parks) {
     featuredContainer.innerHTML = '';

@@ -28,16 +28,21 @@
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/larger.css">
 
-  <!-- JavaScript (MUST be in head) -->
+  <!-- JavaScript (required in HEAD) -->
   <script type="module" src="scripts/main.js"></script>
   <script type="module" src="scripts/modal.js"></script>
 </head>
 
 <body>
+
 <header>
   <nav>
     <div class="logo">National Parks</div>
-    <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      &#9776;
+    </button>
+
     <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="explore.html">Explore</a></li>
@@ -48,14 +53,24 @@
 </header>
 
 <main>
+
+  <!-- Hero Section -->
   <section class="hero">
     <h1>Welcome to National Parks Explorer</h1>
-    <p>Discover the beauty and wonder of fifteen iconic United States National Parks.</p>
+    <p>
+      Discover the beauty and wonder of fifteen iconic United States National Parks.
+    </p>
   </section>
 
-  <section id="featured-parks" class="cards-container">
-    <!-- Cards populated by JavaScript -->
+  <!-- Featured Parks Section (FIXED) -->
+  <section id="featured-parks">
+    <h2>Featured National Parks</h2>
+
+    <div class="cards-container">
+      <!-- Cards populated dynamically by JavaScript -->
+    </div>
   </section>
+
 </main>
 
 <footer>
