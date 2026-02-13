@@ -1,20 +1,22 @@
 /* ===== General Reset ===== */
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', Arial, sans-serif;
 }
 
 body {
+    font-family: 'Roboto', Arial, sans-serif;
     line-height: 1.6;
     background-color: #f7f7f7;
-    color: #333;
+    color: #222; /* Improved contrast */
 }
 
 /* ===== Header & Navigation ===== */
 header {
-    background-color: #006400;
+    background-color: #0b5d1e; /* Darker green for AA contrast */
     color: #fff;
 }
 
@@ -22,8 +24,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 1.25rem;
     position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .logo {
@@ -31,35 +35,39 @@ nav {
     font-weight: 700;
 }
 
+/* Navigation Links */
 .nav-links {
     list-style: none;
     display: flex;
     gap: 1.5rem;
 }
 
-.nav-links li a {
-    color: #fff;
+.nav-links a {
+    color: #ffffff;
     text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
+    font-weight: 600;
 }
 
-.nav-links li a:hover {
-    color: #90ee90;
+.nav-links a:hover,
+.nav-links a:focus {
+    text-decoration: underline;
 }
 
+/* Hamburger */
 .hamburger {
     display: none;
     font-size: 1.8rem;
     background: none;
     border: none;
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
 }
 
 /* ===== Main Content ===== */
 main {
     padding: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 h1, h2 {
@@ -72,32 +80,31 @@ p {
 
 /* ===== Cards / Featured Parks ===== */
 .cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
     padding: 1rem 0;
 }
 
 .card {
-    background: #fff;
+    background: #ffffff;
     padding: 1rem;
-    border-radius: 8px;
-    width: 300px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
 }
 
 .card img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
 }
 
 /* ===== Forms ===== */
@@ -105,93 +112,96 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    max-width: 500px;
-    margin: 1rem auto;
-    background: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    max-width: 520px;
+    margin: 2rem auto;
+    background: #ffffff;
+    padding: 1.75rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
 }
 
-form input, form textarea {
-    padding: 0.5rem;
+form input,
+form textarea {
+    padding: 0.6rem;
     font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
 }
 
+form input:focus,
+form textarea:focus {
+    border-color: #0b5d1e;
+    outline: none;
+}
+
+/* Submit Button */
 form button {
-    background-color: #006400;
-    color: #fff;
+    background-color: #0b5d1e;
+    color: #ffffff;
     border: none;
-    padding: 0.75rem;
-    border-radius: 5px;
+    padding: 0.8rem;
+    border-radius: 6px;
     cursor: pointer;
     font-weight: 600;
-    transition: background 0.3s ease;
 }
 
 form button:hover {
-    background-color: #228B22;
+    background-color: #084515;
 }
 
 /* ===== Footer ===== */
 footer {
     text-align: center;
     padding: 1rem;
-    background: #006400;
-    color: #fff;
+    background: #0b5d1e;
+    color: #ffffff;
     margin-top: 2rem;
 }
 
 footer a {
-    color: #90ee90;
+    color: #c8facc; /* Accessible light green */
     text-decoration: none;
 }
 
-footer a:hover {
+footer a:hover,
+footer a:focus {
     text-decoration: underline;
 }
 
-/* ===== Responsive ===== */
+/* ===== Responsive Navigation ===== */
 @media (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+    }
+
     .nav-links {
         flex-direction: column;
         display: none;
-        background: #006400;
+        background: #0b5d1e;
         position: absolute;
         top: 60px;
         right: 0;
         width: 100%;
         padding: 1rem 0;
         z-index: 1000;
+        text-align: center;
     }
 
     .nav-links li {
-        text-align: center;
         margin: 0.5rem 0;
-    }
-
-    .hamburger {
-        display: block;
     }
 
     .nav-links.active {
         display: flex;
     }
-
-    .cards-container {
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
-/* ===== Accessibility / Contrast ===== */
-a {
-    outline: none;
-}
-
-a:focus {
-    outline: 2px dashed #90ee90;
+/* ===== Accessibility ===== */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: 3px solid #c8facc;
     outline-offset: 2px;
 }
