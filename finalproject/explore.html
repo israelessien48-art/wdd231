@@ -4,25 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>National Parks Explorer - Explore</title>
-    <meta name="description" content="Explore detailed information about 15 US National Parks with images, facts, and visitor info.">
+
+    <meta name="description" content="Explore detailed information about 15 U.S. National Parks with images, facts, and visitor information.">
     <meta name="author" content="Israel Essien">
     <link rel="icon" href="images/favicon.ico">
 
     <!-- Open Graph -->
     <meta property="og:title" content="National Parks Explorer - Explore">
-    <meta property="og:description" content="Explore detailed information about 15 US National Parks with images, facts, and visitor info.">
-    <meta property="og:image" content="https://israelessien48-art.github.io/wdd231/images/zion.jpg">
+    <meta property="og:description" content="Explore detailed information about 15 U.S. National Parks with images, facts, and visitor information.">
+    <meta property="og:image" content="https://israelessien48-art.github.io/wdd231/finalproject/images/zion.jpg">
     <meta property="og:url" content="https://israelessien48-art.github.io/wdd231/finalproject/explore.html">
+
+    <!-- Google Fonts (REQUIRED) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript (MUST be in head) -->
+    <script type="module" src="scripts/data.js"></script>
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/modal.js"></script>
 </head>
+
 <body>
 <header>
     <nav>
         <div class="logo">National Parks</div>
-        <button class="hamburger" id="hamburger">&#9776;</button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
         <ul class="nav-links" id="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="explore.html">Explore</a></li>
@@ -40,11 +52,13 @@
 </main>
 
 <footer>
-    <p>&copy; 2026 Israel Essien | <a href="https://www.youtube.com/yourvideolink" target="_blank">Project Video</a></p>
+    <p>
+        &copy; 2026 Israel Essien |
+        <a href="https://www.youtube.com/yourvideolink" target="_blank">
+            Project Video
+        </a>
+    </p>
 </footer>
 
-<script type="module" src="scripts/data.js"></script>
-<script type="module" src="scripts/main.js"></script>
-<script type="module" src="scripts/modal.js"></script>
 </body>
 </html>
