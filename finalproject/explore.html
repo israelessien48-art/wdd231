@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>National Parks Explorer - Explore</title>
 
     <meta name="description" content="Explore detailed information about 15 U.S. National Parks with images, facts, and visitor information.">
@@ -15,7 +16,7 @@
     <meta property="og:image" content="https://israelessien48-art.github.io/wdd231/finalproject/images/zion.jpg">
     <meta property="og:url" content="https://israelessien48-art.github.io/wdd231/finalproject/explore.html">
 
-    <!-- Google Fonts (REQUIRED) -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -24,17 +25,21 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
 
-    <!-- JavaScript (MUST be in head) -->
-    <script type="module" src="scripts/data.js"></script>
+    <!-- JavaScript (required in HEAD) -->
     <script type="module" src="scripts/main.js"></script>
     <script type="module" src="scripts/modal.js"></script>
 </head>
 
 <body>
+
 <header>
     <nav>
         <div class="logo">National Parks</div>
-        <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            &#9776;
+        </button>
+
         <ul class="nav-links" id="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="explore.html">Explore</a></li>
@@ -45,10 +50,17 @@
 </header>
 
 <main>
+
     <h1>Explore National Parks</h1>
-    <section id="parks-list" class="cards-container">
-        <!-- Dynamic items injected from JSON -->
+
+    <section id="parks-list">
+        <h2>All National Parks</h2>
+
+        <div class="cards-container">
+            <!-- Dynamic items injected from JavaScript -->
+        </div>
     </section>
+
 </main>
 
 <footer>
